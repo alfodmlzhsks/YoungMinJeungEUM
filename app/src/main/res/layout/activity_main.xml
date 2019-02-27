@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,5 +7,98 @@
     android:background="@color/backgroundColor">
 
 
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/frmMainBox">
 
-</RelativeLayout>
+
+    </FrameLayout>
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|top"
+        android:id="@+id/frmTitleBoxTop">
+        <ImageView
+            android:id="@+id/ivTitleTopImage"
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center|top"
+            android:src="@drawable/title_bar_top"
+            android:scaleType="fitStart"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|top"
+            android:orientation="vertical"
+            android:paddingTop="5dp"
+            android:gravity="center|top">
+            <ImageButton
+                android:id="@+id/ibtnTitleTopIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/next_top_button"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:visibility="visible"/>
+            <TextView
+                android:id="@+id/tvTitleTopText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="영민정음"
+                android:gravity="center"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="2dp"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:fontFamily="@font/ya_bold"/>
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/frmTitleBoxBottom"
+        android:layout_gravity="center|bottom">
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="80dp"
+            android:src="@drawable/title_bar_bottom"
+            android:id="@+id/ivTitleBottomImage"
+            android:scaleType="fitEnd"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:layout_gravity="center|bottom"
+            android:gravity="center|bottom">
+            <TextView
+                android:id="@+id/tvTitleBottomText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="퀴즈풀기"
+                android:gravity="center"
+                android:layout_gravity="center|top"
+                android:layout_marginBottom="2dp"
+                android:textColor="#fff"
+                android:textSize="28sp"
+                android:fontFamily="@font/ya_bold"/>
+            <ImageButton
+                android:id="@+id/ibtnTitleBottomIcon"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:src="@drawable/next_bottom_button"
+                android:background="#00000000"
+                android:scaleType="fitCenter"
+                android:visibility="visible"/>
+        </LinearLayout>
+    </FrameLayout>
+
+
+
+
+
+</FrameLayout>
