@@ -18,6 +18,7 @@
             android:src="@drawable/shape_circle"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
+            android:id="@+id/ivInfoBackground"
             android:padding="10dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -25,6 +26,7 @@
             android:textSize="30sp"
             android:fontFamily="@font/ya_bold"
             android:text="앱 정보"
+            android:id="@+id/tvInfoText"
             android:textColor="#fff"
             android:gravity="center"
             android:layout_gravity="center"/>
@@ -41,6 +43,7 @@
             android:layout_height="250dp"
             android:src="@drawable/shape_circle"
             android:layout_gravity="center"
+            android:id="@+id/ivLicenseBackground"
             android:scaleType="fitCenter"
             android:padding="10dp"/>
         <TextView
@@ -49,6 +52,7 @@
             android:textSize="30sp"
             android:fontFamily="@font/ya_bold"
             android:text="오픈소스 라이센스"
+            android:id="@+id/tvLicenseText"
             android:textColor="#fff"
             android:gravity="center"
             android:layout_gravity="center"/>

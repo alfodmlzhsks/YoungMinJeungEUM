@@ -6,10 +6,18 @@
     android:background="@color/backgroundColor"
     android:layout_marginTop="80dp"
     android:layout_marginBottom="80dp">
-    <TextView
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="mainFragment"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/shape_round_rectangle">
+
+    </RelativeLayout>
+
+
 
 
 </RelativeLayout>

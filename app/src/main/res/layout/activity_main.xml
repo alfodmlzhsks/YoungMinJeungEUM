@@ -50,7 +50,7 @@
                 android:layout_gravity="center|top"
                 android:layout_marginTop="2dp"
                 android:textColor="#fff"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/ya_bold"/>
         </LinearLayout>
 
@@ -84,7 +84,7 @@
                 android:layout_gravity="center|top"
                 android:layout_marginBottom="2dp"
                 android:textColor="#fff"
-                android:textSize="28sp"
+                android:textSize="24sp"
                 android:fontFamily="@font/ya_bold"/>
             <ImageButton
                 android:id="@+id/ibtnTitleBottomIcon"

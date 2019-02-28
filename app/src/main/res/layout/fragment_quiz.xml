@@ -17,11 +17,13 @@
             android:src="@drawable/shape_circle"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
+            android:id="@+id/ivQuizBackground"
             android:padding="10dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="30sp"
+            android:id="@+id/tvQuizText"
             android:fontFamily="@font/ya_bold"
             android:text="퀴즈 풀기"
             android:textColor="#fff"
@@ -41,6 +43,7 @@
             android:src="@drawable/shape_circle"
             android:layout_gravity="center"
             android:scaleType="fitCenter"
+            android:id="@+id/ivQuizStatBackground"
             android:padding="10dp"/>
         <TextView
             android:layout_width="wrap_content"
@@ -48,6 +51,7 @@
             android:textSize="30sp"
             android:fontFamily="@font/ya_bold"
             android:text="퀴즈 통계 보기"
+            android:id="@+id/tvQuizStatText"
             android:textColor="#fff"
             android:gravity="center"
             android:layout_gravity="center"/>
