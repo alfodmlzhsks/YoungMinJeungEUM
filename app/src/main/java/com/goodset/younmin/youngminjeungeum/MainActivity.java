@@ -105,6 +105,7 @@ public class MainActivity extends AppCompatActivity {
             case 3:
                 InfoFragment infoFragment=new InfoFragment();
                 if(anim==0){
+
                     transaction.setCustomAnimations(R.anim.slide_in_up,R.anim.slide_out_up);
                 }else if(anim==1){
                     transaction.setCustomAnimations(R.anim.slide_in_down,R.anim.slide_out_down);

@@ -1,98 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".AppInfoActivity"
-    android:background="@color/backgroundColor">
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/frmTitleBoxTop"
-        android:layout_alignParentTop="true">
-        <ImageView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:layout_gravity="center|top"
-            android:src="@drawable/title_bar_top"
-            android:scaleType="fitStart"/>
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="앱 정보"
-            android:gravity="center|top"
-            android:layout_gravity="center|top"
-            android:layout_marginTop="20sp"
-            android:textColor="#fff"
-            android:textSize="24sp"
-            android:fontFamily="@font/ya_bold"/>
-    </FrameLayout>
-    <ImageButton
-        android:id="@+id/ibtnClose"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:src="@drawable/close"
-        android:scaleType="fitCenter"
-        android:background="#00000000"
-        android:padding="10dp"
-        android:layout_alignParentRight="true"
-        android:layout_marginTop="10dp"
-        android:layout_marginRight="20dp"/>
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <ImageButton
-        android:id="@+id/ibtnHome"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:background="#00000000"
-        android:padding="9dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/home" />
+    <data>
+        <variable
+            name="appInfo"
+            type="com.goodset.younmin.youngminjeungeum.AppInfoActivity" />
+    </data>
 
-    <FrameLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/frmTitleBoxBottom"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true">
-        <ImageView
-            android:layout_width="220dp"
-            android:layout_height="80dp"
-            android:src="@drawable/title_bar_bottom"
-            android:id="@+id/ivTitleBottomImage"
-            android:scaleType="fitEnd"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingBottom="5dp"
-            android:layout_gravity="center|bottom"
-            android:gravity="center|bottom">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="goodset"
-                android:gravity="center|bottom"
-                android:layout_gravity="center|bottom"
-                android:layout_marginBottom="15sp"
-                android:textColor="#fff"
-                android:textSize="24sp"
-                android:fontFamily="@font/ya_bold"/>
-
-        </LinearLayout>
-    </FrameLayout>
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/frmTitleBoxTop"
-        android:layout_above="@id/frmTitleBoxBottom"
-        android:background="@drawable/shape_round_rectangle"
-        android:layout_margin="20dp">
+        android:background="@color/backgroundColor"
+        tools:context=".AppInfoActivity">
+
+        <FrameLayout
+            android:id="@+id/frmTitleBoxTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center|top"
+                android:scaleType="fitStart"
+                android:src="@drawable/title_bar_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|top"
+                android:layout_marginTop="20sp"
+                android:fontFamily="@font/ya_bold"
+                android:gravity="center|top"
+                android:text="앱 정보"
+                android:textColor="#fff"
+                android:textSize="24sp" />
+        </FrameLayout>
+
+        <ImageButton
+            android:id="@+id/ibtnClose"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="#00000000"
+            android:padding="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/close" />
+
+        <ImageButton
+            android:id="@+id/ibtnHome"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:background="#00000000"
+            android:padding="9dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/home" />
+
+        <FrameLayout
+            android:id="@+id/frmTitleBoxBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true">
+
+            <ImageView
+                android:id="@+id/ivTitleBottomImage"
+                android:layout_width="220dp"
+                android:layout_height="80dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/title_bar_bottom" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:gravity="center|bottom"
+                android:orientation="vertical"
+                android:paddingBottom="5dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginBottom="15sp"
+                    android:fontFamily="@font/ya_bold"
+                    android:gravity="center|bottom"
+                    android:text="goodset"
+                    android:textColor="#fff"
+                    android:textSize="24sp" />
+
+            </LinearLayout>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/frmTitleBoxBottom"
+            android:layout_below="@id/frmTitleBoxTop"
+            android:layout_margin="20dp"
+            android:background="@drawable/shape_round_rectangle">
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
-</RelativeLayout>
+</layout>
